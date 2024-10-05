@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\models\\entities\\dateinrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\models\\entities\\dateinrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\models\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\models\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\repository\\post\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\repository\\post\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\viewmodel\\imageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\viewmodel\\imageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\views\\post\\updatepost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\views\\post\\updatepost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\models\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\models\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|c:\\users\\ah427\\onedrive\\desktop\\finalprojectiti\\newspaper\\views\\post\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41CE18AE-7515-4E7D-937B-B32A5F57B9B6}|NewsPaper\\NewsPaper.csproj|solutionrelative:newspaper\\views\\post\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\Models\\Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\Department.cs",
+              "RelativeToolTip": "NewsPaper\\Models\\Entities\\Department.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:39:52.827Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\Models\\Entities\\Post.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\Post.cs",
+              "RelativeToolTip": "NewsPaper\\Models\\Entities\\Post.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:02:35.707Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Repository\\Post\\PostRepository.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\Repository\\Post\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Repository\\Post\\PostRepository.cs",
+              "RelativeToolTip": "NewsPaper\\Repository\\Post\\PostRepository.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwFYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:01:19.419Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Controllers\\PostController.cs",
+              "RelativeToolTip": "NewsPaper\\Controllers\\PostController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:00:56.333Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DateInRangeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\DateInRangeAttribute.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\Models\\Entities\\DateInRangeAttribute.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Models\\Entities\\DateInRangeAttribute.cs",
+              "RelativeToolTip": "NewsPaper\\Models\\Entities\\DateInRangeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:29:00.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ImageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\ViewModel\\ImageViewModel.cs",
+              "RelativeDocumentMoniker": "NewsPaper\\ViewModel\\ImageViewModel.cs",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\ViewModel\\ImageViewModel.cs",
+              "RelativeToolTip": "NewsPaper\\ViewModel\\ImageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:29:09.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreatePost.cshtml",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\CreatePost.cshtml",
+              "RelativeDocumentMoniker": "NewsPaper\\Views\\Post\\CreatePost.cshtml",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\CreatePost.cshtml",
+              "RelativeToolTip": "NewsPaper\\Views\\Post\\CreatePost.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:13:43.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdatePost.cshtml",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\UpdatePost.cshtml",
+              "RelativeDocumentMoniker": "NewsPaper\\Views\\Post\\UpdatePost.cshtml",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\UpdatePost.cshtml",
+              "RelativeToolTip": "NewsPaper\\Views\\Post\\UpdatePost.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:13:37.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\GetAll.cshtml",
+              "RelativeDocumentMoniker": "NewsPaper\\Views\\Post\\GetAll.cshtml",
+              "ToolTip": "C:\\Users\\ah427\\OneDrive\\Desktop\\FinalProjectITI\\NewsPaper\\Views\\Post\\GetAll.cshtml",
+              "RelativeToolTip": "NewsPaper\\Views\\Post\\GetAll.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T14:59:57.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 245,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

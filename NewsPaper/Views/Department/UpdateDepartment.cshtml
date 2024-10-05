@@ -1,0 +1,56 @@
+﻿@using NewsPaper.Models.Entities
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Department
+
+ <section class="contact section-padding">
+    <div class="container">
+        <div class="row">
+                        
+            <div class="col-lg-6 col-12">
+                <h2 class="mb-4">Update <span>Department</span></h2>
+
+                <form method="post" asp-controller="Department" asp-action="SaveDepartment" asp-route-id="@Model.Id" class="contact-form me-lg-5 pe-lg-3" role="form">
+
+                    <div class="form-floating">
+                        <input asp-for="Name" class="form-control" placeholder="Full name">
+                        <label asp-for="Name"></label>
+                        <span asp-validation-for="Name"></span>
+                    </div>
+
+                    <div class="form-floating my-4">
+                        <input asp-for="BirthDate" class="form-control" placeholder="yyyy-MM-dd" placeholder="BirthDate" />
+                        <label asp-for="BirthDate"></label>
+                    </div>
+                    @* @if(Model.authors != null)
+                    {
+                        @foreach (var auth in Model.authors)
+                        {
+                            <div class="form-floating my-4">
+                                <input asp-for="@auth.Name" class="form-control" placeholder="Name" required>
+
+                                <label asp-for="@auth.Name"></label>
+                            </div>
+                        }
+                    } *@
+                    <div class="col-lg-5 col-6">
+                        <button type="submit" class="form-control">Save</button>
+                    </div>
+                </form>
+            </div>
+
+            
+         
+
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}

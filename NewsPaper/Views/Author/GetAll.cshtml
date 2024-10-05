@@ -1,0 +1,204 @@
+﻿@using NewsPaper.Models.Entities;
+@model Author
+
+@{
+    SelectList departmentList = new SelectList(ViewBag.departments, "Id", "Name");
+}
+
+<main>
+
+
+
+    <header class="site-header section-padding-img site-header-image">
+
+
+        <img src="~/images/header/header3.jpeg" class="header-image img-fluid" style="width:100%; height:auto" alt="department Header">
+    </header>
+
+    <section class="team section-padding">
+        <div class="container" style="margin: 5rem 0">
+            <div class="row">
+
+                <div class="col-12">
+                    <h2 class="mb-5">Author<span>s</span></h2>
+                </div>
+                @if (ViewBag.authors != null)
+                {
+                    @foreach (var auth in ViewBag.authors)
+                    {
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <div class="team-info">
+                                    <h5 class="mb-0" style="text-align: center; padding-bottom: 30px">@auth.Name</h5>
+                                    <strong class="text-muted">Id: @auth.Id</strong>
+                                    <br />
+                                    <strong class="text-muted">BirthDate: @auth.BirthDate?.ToString("yyyy-MM-dd")</strong>
+                                    <br />
+                                    <strong class="text-muted">TitleJop: @auth.TitleJob</strong>
+                                    <br />
+                                    <strong class="text-muted">Gender: @auth.Gender</strong>
+                                    <br />
+                                    <strong class="text-muted">Salary: @auth.Salary</strong>
+                                    <br />
+                                    <strong class="text-muted">Address: @auth.Address</strong>
+                                    <br />
+                                    @if (auth.department != null)
+                                    {
+                                        <strong class="text-muted">department: @auth.department.Name</strong>
+                                    }
+                                    else
+                                    {
+                                        <strong class="text-muted">department: Unknown</strong>
+                                    }
+                                    <br />
+                                    @if (auth.posts != null)
+                                    {
+                                        <a asp-controller="Post" asp-action="GetPostsById" asp-route-id="@auth.Id"><strong class="text-muted">Post: </strong></a>
+                                        <ul>
+                                            @foreach (var post in auth.posts)
+                                            {
+                                                <li>
+                                                    <strong class="text-muted">@post.PostType</strong>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+
+
+                                    <!-- Button trigger modal -->
+                                    @*   <button type="button" class="btn custom-modal-btn" data-bs-toggle="modal" data-bs-target="#don">
+                            <i class="bi-plus-circle-fill"></i>
+                            </button> *@
+
+
+                                </div>
+                                <div style="display: flex;
+                                 gap: 20px;
+                                 position: absolute;
+                                 bottom: 0;
+                                 right: 30px;">
+                                    <div class="col-lg-5 col-6">
+                                        <a asp-controller="Author" asp-action="DeleteAuthor" asp-route-id="@auth.Id" class="form-control" style="background-color:#000000de"><i class="ri-chat-delete-fill" style="color:white"></i></a>
+                                    </div>
+
+                                    <div class="col-lg-5 col-6">
+                                        <a asp-controller="Author" asp-action="UpdateAuthor" asp-route-id="@auth.Id" class="form-control" style="background-color:#000000de"><i class="ri-loop-right-fill" style="color:white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No authors available.</p>
+                }
+
+
+            </div>
+
+        </div>
+        <button type="button" style="height: 50px;
+                                    padding: 0;
+                                    background-color: #e10303;
+                                    position: absolute;
+                                    margin: 0;
+                                    top: 85%;
+                                    right: 5%;"
+                class="btn custom-modal-btn" data-bs-toggle="modal" data-bs-target="#don">
+            <i class="bi-plus-circle-fill" style="font-size:30px"></i>
+        </button>
+    </section>
+
+
+</main>
+
+
+<!-- TEAM MEMBER MODAL -->
+<div class="modal fade" id="don" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+            <div class="modal-header flex-column" style="padding-top:0; padding-bottom:0;">
+                <h3 class="modal-title" id="exampleModalLabel">Add Author</h3>
+
+            </div>
+
+            <div>
+                <div class="modal-body">
+                    <form class="contact-form me-lg-5 pe-lg-3" style="display:flex; justify-content:space-between" role="form" method="post" asp-controller="Author" asp-action="AddAuthor">
+                        <div style="flex-grow:0.5">
+                            <div class="form-floating">
+                                <input asp-for="Name" class="form-control">
+                                <label asp-for="Name"></label>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-floating">
+                                <input asp-for="TitleJob" class="form-control">
+                                <label asp-for="TitleJob"></label>
+                                <span asp-validation-for="TitleJob" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-floating">
+                                <input asp-for="Address" class="form-control">
+                                <label asp-for="Address"></label>
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-floating my-4">
+                                <input asp-for="Salary" class="form-control" placeholder="dd-MM-yyyy">
+                                <label asp-for="Salary"></label>
+                                <span asp-validation-for="Salary" class="text-danger"></span>
+                            </div>
+
+                            
+
+                            
+                        </div>
+                        
+                        <div>
+                            <div class="form-floating my-4">
+                                <input asp-for="Gender" class="form-control">
+                                <label asp-for="Gender"></label>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-floating my-4">
+                                <input asp-for="BirthDate" class="form-control" pattern="\d{4}-\d{2}-\d{2}" placeholder="dd-MM-yyyy">
+                                <label asp-for="BirthDate"></label>
+                                <span asp-validation-for="BirthDate" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-floating">
+                                <select asp-for="departmentId" asp-items="departmentList" class="form-control"></select>
+                                <label asp-for="departmentId" style="width: 45%"></label>
+                                <span asp-validation-for="departmentId" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-lg-5 col-6">
+                                <button type="submit" class="form-control">Add</button>
+                            </div>
+                        </div>
+                                                
+                    </form>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    @section Scripts {
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    }

@@ -1,0 +1,90 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using NewsPaper.Models.Entities;
+@model List<Post>
+
+<section class="product-detail section-padding">
+    <div class="container" style="margin: 0; padding: 0;">
+        <div style="display: flex; justify-content: space-between; gap: 13rem; margin-bottom: 5rem;">
+            <button class="btn custom-btn cart-btn" style="border-radius: 15px;">
+                <a asp-controller="Post" asp-action="CreatePost" style="color:white">New Post</a>
+            </button>
+            <button class="btn custom-btn cart-btn" style="border-radius: 15px;">
+                <a asp-controller="Post" asp-action="DeleteAllPosts" style="color:white">Delete All</a>
+            </button>
+        </div>
+
+
+        <div style="border: 2px solid #0000006e; border-radius: 10px; padding: 15px;">
+        
+        
+        @if (Model != null && Model.Count > 0)
+        {
+            @foreach(var post in Model)
+            {
+                @if(post != null)
+                {
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="product-thumb">
+                                @if (post.Image != null)
+                                {
+                                    <img src="~/images/posts/@post.Image" class="img-fluid product-image" alt="">
+                                }
+                                else
+                                {
+                                    <img style="position:absolute; width: 90%" src="~/images/posts/post5.jpeg" class="img-fluid product-image" alt="">
+                                }
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="product-info d-flex" style="padding:0 35px;">
+                                <div>
+                                    <h2 class="product-title mb-0">@post.PostType</h2>
+                                    @if(post.author != null){
+                                        <p class="product-p">@post.author.Name</p>
+                                    }
+                                    else{
+                                        <p class="product-p">Unknown Authour</p>
+                                    }
+                                </div>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">@post.CreateTime</small>
+
+                            </div>
+                            <div class="product-description">
+                                @if(post.Description != null)
+                                {
+                                    <strong class="d-block mt-4 mb-2">Description</strong>
+                                    <p class="lead mb-5" style="font-weight: 500; font-size: 19px;">@post.Description</p>
+                                }
+                                else
+                                {
+                                    <strong class="d-block mt-4 mb-2">Not Found Description</strong>
+                                }
+
+                            </div>
+
+                            <div style="display: flex; justify-content: space-evenly;">
+                                <div><a asp-controller="Post" asp-action="UpdatePost" asp-route-id="@post.Id"><i class="ri-edit-fill">Edit</i></a></div>
+                                <div><a asp-controller="Post" asp-action="DeletePost" asp-route-id="@post.Id"><i class="ri-chat-delete-line">Delete</i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                        <div style="margin: 8rem 0; width:100%; background-color:#0000005c; height:2px"></div>
+                }
+            }
+       }
+
+        else
+        {
+            <p>No posts available.</p>
+        }
+        </div>
+
+    </div>
+</section>

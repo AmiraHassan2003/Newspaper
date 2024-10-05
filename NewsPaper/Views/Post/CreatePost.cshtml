@@ -1,0 +1,151 @@
+﻿ @using NewsPaper.ViewModel
+
+@{
+    SelectList authorList = new SelectList(ViewBag.Authors, "Id", "Name");
+
+}
+
+@model ImageViewModel
+
+<style>
+    .input-box input {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        left: 2%;
+        height: 50%;
+/*        SelectList imageList = new SelectList(ViewBag.Images, "Id", "Image");*/
+    }
+
+        .input-box input::placeholder {
+            color: white;
+        }
+
+    .form-text {
+        border: 2px solid rgba(255, 255, 255.5);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        display: grid;
+        grid-template-columns: repeat(2, 25rem);
+        grid-template-rows: repeat(2, 7rem);
+        padding: 10px 0 20px 10px;
+        height: 70vh;
+        justify-content: space-around;
+    }
+
+    .btn {
+        color: #fff;
+        background-color: #795548;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 3px 0 10px rgba(0,0,0,.5);
+        transition: all .3s ease-in-out;
+    }
+
+    .form-label {
+        font-size: 18px;
+        width: 95%;
+    }
+</style>
+
+
+
+
+
+
+
+<section class="contact section-padding">
+    <div class="container">
+        <div>
+
+            <div>
+                <h2 class="mb-4">Update <span>Post</span></h2>
+
+                <form method="post" enctype="multipart/form-data" asp-controller="Post" asp-action="AddPost" class="contact-form me-lg-5 pe-lg-3">
+
+                    <div class="form-floating">
+                        <input asp-for="PostType" class="form-control" placeholder="Post Type">
+                        <label asp-for="PostType"></label>
+                        <span asp-validation-for="PostType"></span>
+                    </div>
+
+@*                      <div class="form-floating my-4">
+                         <input asp-for="CreateTime" class="form-control" readonly placeholder="CreateTime" />
+                         <label asp-for="CreateTime"></label>
+                         <span asp-validation-for="CreateTime"></span>
+                     </div> *@
+
+                    <div class="form-floating mb-4">
+                        <textarea asp-for="Description" class="form-control" style="height: 160px"></textarea>
+                        <label asp-for="Description"></label>
+                        <span asp-validation-for="Description"></span>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-5 ms-auto">
+                        <div class="row">
+                            <div style="display: flex; gap: 20px; justify-content:space-between;">
+                                <div class="input-box" style="width: 45%">
+                                    <label asp-for="AuthorId" class="form-label">Select Author</label>
+                                    <select asp-for="AuthorId" asp-items="authorList" class="form-select" class="form-control"></select>
+                                </div>
+
+                                <div class="form-floating my-4">
+                                    <input asp-for="Image" class="form-control" placeholder="Image" readonly />
+                                    <label asp-for="Image" value="Image"></label>
+                                    @*                                     <span>@Model.Image</span>
+                                    *@                                    <span asp-validation-for="Image"></span>
+                                </div>
+                                @* <div class="input-box">
+                                <label asp-for="ImageId" class="form-label">Select Image</label>
+                                <select asp-for="ImageId" asp-items="imageList" class="form-select"></select>
+                                </div> *@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-6">
+                        <button type="submit" class="form-control">Save</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}

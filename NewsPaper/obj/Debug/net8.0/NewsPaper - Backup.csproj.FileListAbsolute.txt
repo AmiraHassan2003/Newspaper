@@ -1,0 +1,8 @@
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.csproj.AssemblyReference.cache
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.AssemblyInfoInputs.cache
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.AssemblyInfo.cs
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.csproj.CoreCompileInputs.cache
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.RazorAssemblyInfo.cache
+C:\Users\ah427\OneDrive\Desktop\FinalProjectITI\NewsPaper\obj\Debug\net8.0\NewsPaper - Backup.RazorAssemblyInfo.cs

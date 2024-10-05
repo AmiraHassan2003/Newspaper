@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\NewsPaper",
+    "\\NewsPaper\\Controllers",
+    "\\NewsPaper\\Models",
+    "\\NewsPaper\\Models\\Entities",
+    "\\NewsPaper\\Repository",
+    "\\NewsPaper\\Repository\\Post",
+    "\\NewsPaper\\ViewModel",
+    "\\NewsPaper\\Views",
+    "\\NewsPaper\\Views\\Post"
+  ],
+  "SelectedNode": "\\NewsPaper\\Properties",
+  "PreviewInSolutionExplorer": false
+}

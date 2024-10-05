@@ -1,0 +1,160 @@
+﻿@using NewsPaper.Models.Entities;
+@model Department
+
+    <main>
+
+      
+
+        <header class="site-header section-padding-img site-header-image">
+            <div class="container" style="position:relative">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 header-info">
+                        <h1>
+                            <span class="d-block text-primary">Company</span>
+                            <span class="d-block text-dark">Newspaper</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+        <img src="~/images/header/departmentHeader.jpg" class="header-image img-fluid" alt="department Header">
+        </header>
+
+        <section class="team section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5">Depart<span>ments</span></h2>
+                    </div>
+                @if (ViewBag.department != null)
+                {
+                    @foreach (var dept in ViewBag.department)
+                    {
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <div class="team-info">
+                                    <h5 class="mb-0" style="text-align: center; padding-bottom: 30px">@dept.Name</h5>
+                                    <strong class="text-muted">Id: @dept.Id</strong>
+                                    <br />
+                                    <strong class="text-muted">BirthDate: @dept.BirthDate?.ToString("yyyy-MM-dd")</strong>
+                                    <br />
+
+                                    <!-- Button trigger modal -->
+                                    @*   <button type="button" class="btn custom-modal-btn" data-bs-toggle="modal" data-bs-target="#don">
+                            <i class="bi-plus-circle-fill"></i>
+                            </button> *@
+
+
+                                    @if (dept.authors != null)
+                                    {
+                                        <a asp-controller="Author" asp-action="GetAuthorsById" asp-route-id="@dept.Id"><strong class="text-muted">Authors: </strong></a>
+                                        <ul>
+                                            @foreach (var auth in dept.authors)
+                                            {
+                                                <li>
+                                                    <strong class="text-muted">@auth.Name</strong>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+
+
+                                </div>
+                                <div style="display: flex;
+                                 gap: 20px;
+                                 position: absolute;
+                                 bottom: 0;
+                                 margin-bottom: 10px;
+                                 right: 30px;">
+                                    <div class="col-lg-5 col-6">
+                                        <a asp-controller="Department" asp-action="DeleteDepartment" asp-route-id="@dept.Id" class="form-control" style="background-color:#000000de"><i class="ri-chat-delete-fill" style="color:white"></i></a>
+                                    </div>
+
+                                    <div class="col-lg-5 col-6">
+                                        <a asp-controller="Department" asp-action="UpdateDepartment" asp-route-id="@dept.Id" class="form-control" style="background-color:#000000de"><i class="ri-loop-right-fill" style="color:white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <p>No departments available.</p>
+                }
+
+                </div>
+            
+            </div>
+        <button type="button" style="height: 50px;
+                                    padding: 0;
+                                    background-color: #e10303;
+                                    position: absolute;
+                                    margin: 0;
+                                    top: 85%;
+                                    right: 5%;" 
+                    class="btn custom-modal-btn" data-bs-toggle="modal" data-bs-target="#don">
+            <i class="bi-plus-circle-fill" style="font-size:30px"></i>
+        </button>
+        </section>
+    
+        
+    </main>
+
+
+    <!-- TEAM MEMBER MODAL -->
+<div class="modal fade" id="don" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-header flex-column" style="padding-top:0; padding-bottom:0;">
+                    <h3 class="modal-title" id="exampleModalLabel">Add Department</h3>
+
+                     @* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> *@
+                </div>
+
+            <div>
+                <div class="modal-body" style="width:100%">
+                    <form class="contact-form me-lg-5 pe-lg-3" role="form" method="post" asp-controller="Department" asp-action="AddDepartment">
+
+                        <div class="form-floating">
+                            <input asp-for="Name" class="form-control">
+                            <label asp-for="Name"></label>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating my-4" style="width:42%">
+                            <input asp-for="BirthDate" class="form-control" type="date"  placeholder="yyyy-MM-dd">
+                            <label asp-for="BirthDate"></label>
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="col-lg-5 col-6">
+                            <button type="submit" class="form-control">Add</button>
+                        </div>
+                    </form>
+
+                        
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+   
+
+    <!-- JAVASCRIPT FILES -->
+    @section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+
